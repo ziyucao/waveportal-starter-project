@@ -1,0 +1,379 @@
+body {
+  background-color: #e4e4e2;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  max-width: 600px;
+  max-width: 90%;
+}
+
+.header {
+  text-align: left;
+  font-size: 2em;
+  color: #5a5a58;
+  font-weight: 600;
+}
+
+.bio {
+  position:relative;
+  height:100%;
+  text-align: left;
+  color: #5a5a58;
+  font-size: 1.2em;
+}
+
+.bioTag {
+  margin-top: 8px;
+  font-weight:300;
+  font-size:0.8em;
+  color:#949494;
+}
+
+.biolinks {
+  margin-top:24px;
+  display: flex;
+  height:2em;
+}
+
+.ens {
+  height:100%;
+  width: 100%;
+  color: #e4e4e2;
+  font-size:0.8em;
+  font-weight:700;
+  font-family:Arvo;
+  border-radius:0px;
+  cursor: pointer;
+  background-color: #5a5a58;
+  border:3px solid #5a5a58!important;
+  padding:4px 8px;
+  display:block;
+}
+
+.bioButton {
+  margin-left:8px;
+}
+
+.bioImage {
+  height:100%;
+}
+
+.introTop {
+  margin-top: 12px;
+  text-align: left;
+  color: #5a5a58;
+  font-size: 1.2em;
+}
+
+.intro {
+  margin-top: 48px;
+  text-align: left;
+  color: #5a5a58;
+  font-size: 1em;
+}
+
+.waveCount {
+  text-align: left;
+  font-size:1.5em;
+  font-weight:500;
+  color: #5a5a58;
+  margin: 24px 0;
+}
+
+.waveButton {
+  font-size:1.2em;
+  border-radius:0px;
+  background-color: #5a5a58;
+  color: #e4e4e2;
+  font-family:Arvo;
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 12px;
+  border:3px solid #5a5a58!important;
+}
+
+.waveButtonDisabled {
+  font-size:1.2em;
+  border-radius:0px;
+  background-color: #e4e4e2;
+  color: #5a5a58;
+  font-family:Arvo;
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 12px;
+  border:3px solid #e4e4e2!important;
+}
+
+.input {
+  color: #5a5a58;
+  font-size:1.2em;
+  font-weight:700;
+  font-family:Arvo;
+  border-radius:0px;
+  background-color: #e4e4e2;
+  margin-top: 24px;
+  border:3px solid #5a5a58!important;
+  padding:16px;
+  display:block;
+  border-bottom:1px solid #ccc;
+  max-width: 100%;
+}
+
+::placeholder {
+  color: #5a5a58;
+  opacity: 0.4;
+}
+
+::-ms-input-placeholder {
+  color: #5a5a58;
+  opacity: 0.4;
+}
+
+.divider {
+  width: 100%;
+  height: 20px;
+  margin: 32px 0;
+  background-image: linear-gradient(to right, #5a5a58 0%, #5a5a58 50%, transparent 50%);
+  background-size: 8px 20px;
+  background-repeat: repeat-x;
+}
+
+.slide {
+  width: 128px;
+  height: 20px;
+  position:relative;
+  background-image: linear-gradient(to right, #5a5a58 0%, #5a5a58 50%, transparent 50%);
+  background-size: 64px 20px;
+  background-repeat: repeat-x;
+  animation-duration: 0.6s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+/*   animation-direction: alternate; */
+}
+
+.slideDelay1 {
+  width: 0px;
+  height: 20px;
+  position:relative;
+  left:0px;
+  top:-20px;
+  background-image: linear-gradient(to right, #5a5a58 0%, #5a5a58 50%, transparent 50%);
+  background-size: 64px 20px;
+  background-repeat: repeat-x;
+  animation-duration: 0.6s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay:0.4s;
+/*   animation-direction: alternate; */
+}
+
+.slideDelay2 {
+  width: 0px;
+  height: 20px;
+  position:relative;
+  left:0;
+  top:-40px;
+  background-image: linear-gradient(to right, #5a5a58 0%, #5a5a58 50%, transparent 50%);
+  background-size: 64px 20px;
+  background-repeat: repeat-x;
+  animation-duration: 0.6s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay:0.2s;
+/*   animation-direction: alternate; */
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 0px;
+  }
+
+  50% {
+    width: 64px;
+  }
+  
+  to {
+    margin-left: 100%;
+    width: 0px;
+  }
+}
+
+.waveItem {
+  color: #5a5a58;
+  font-size:1.2em;
+  font-weight:500;
+  font-family:Arvo;
+  border-radius:0px;
+  background-color: #e4e4e2;
+  margin: 12px 0px;
+  border:3px solid #bfbfbf!important;
+  padding:16px;
+}
+
+.waveInfo {
+  font-weight:300;
+  font-size:0.5em;
+  color:#949494;
+}
+
+.waveMessage {
+  font-weight:300;
+  font-size:1em;
+  margin-top: 8px;
+  color:#5a5a58;
+}
+
+.large {
+  font-size:1.5em;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 0px;
+  border:3px solid #bfbfbf!important;
+  margin-bottom: 24px;
+}
+
+.walletButton {
+  font-size:1.2em;
+  border-radius:0px;
+  background-color: #5a5a58;
+  color: #e4e4e2;
+  font-family:Arvo;
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 12px;
+  border:3px solid #5a5a58!important;
+}
+
+.metaMaskIcon {
+  margin: 0px 8px;
+  height: 1.8em;
+  width: 1.8em;
+  display: inline-block;
+  vertical-align:middle;
+}
+
+.cell{
+  height: 2em;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 2.2em;
+}
+
+@media screen and (min-width: 530px) {
+  .waveInfo {
+    font-weight:300;
+    font-size:0.8em;
+    color:#949494;
+  }
+  
+  .avatar {
+    width: 200px;
+    border-radius: 0px;
+    border:3px solid #bfbfbf!important;
+    margin-bottom: 0;
+  }
+
+  .biolinks {
+    margin-top:0px;
+    position:absolute;
+    bottom:0px;
+    display: flex;
+    height:2em;
+  }
+
+  .ens {
+    color: #e4e4e2;
+    font-size:0.8em;
+    font-weight:700;
+    font-family:Arvo;
+    border-radius:0px;
+    cursor: pointer;
+    background-color: #5a5a58;
+    padding:4px 16px;
+    display:block;
+  }
+
+  .metaMaskIcon {
+    margin: 0px 12px;
+    height: 1.6em;
+    width: 1.6em;
+    display: inline-block;
+    vertical-align:middle;
+  }
+  
+  .left {
+    float: left;
+    width: 200px;
+  }
+
+  .right {
+    height:206px;
+    margin-left: 232px;
+  }
+
+  .slide {
+    width: 128px;
+    height: 20px;
+    position:relative;
+    background-image: linear-gradient(to right, #5a5a58 0%, #5a5a58 50%, transparent 50%);
+    background-size: 64px 20px;
+    background-repeat: repeat-x;
+    animation-duration: 0.9s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  /*   animation-direction: alternate; */
+  }
+  
+  .slideDelay1 {
+    width: 0px;
+    height: 20px;
+    position:relative;
+    left:0px;
+    top:-20px;
+    background-image: linear-gradient(to right, #5a5a58 0%, #5a5a58 50%, transparent 50%);
+    background-size: 64px 20px;
+    background-repeat: repeat-x;
+    animation-duration: 0.9s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay:0.s;
+  /*   animation-direction: alternate; */
+  }
+  
+  .slideDelay2 {
+    width: 0px;
+    height: 20px;
+    position:relative;
+    left:0;
+    top:-40px;
+    background-image: linear-gradient(to right, #5a5a58 0%, #5a5a58 50%, transparent 50%);
+    background-size: 64px 20px;
+    background-repeat: repeat-x;
+    animation-duration: 0.9s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay:0.6s;
+  /*   animation-direction: alternate; */
+  }
+}
+
+
