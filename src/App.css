@@ -64,8 +64,24 @@ body {
   margin-left:8px;
 }
 
+.withBackground {
+  background-color: #5a5a58;
+}
+
 .bioImage {
   height:100%;
+}
+.bioImageCyberConnect {
+  padding: 10px 9px;
+  height: 18px;
+}
+.bioImageMirror {
+  padding: 10px 12px;
+  height: 18px;
+}
+.bioImageTwitter {
+  padding: 8px;
+  height: 23px;
 }
 
 .introTop {
@@ -242,7 +258,10 @@ body {
 }
 
 .avatar {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
   border-radius: 0px;
   border:3px solid #bfbfbf!important;
   margin-bottom: 24px;
@@ -275,7 +294,62 @@ body {
   line-height: 2.2em;
 }
 
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 580px) and (max-width: 680px)  {
+  .header {
+    text-align: left;
+    font-size: 1.6em;
+    color: #5a5a58;
+    font-weight: 600;
+  }
+
+  .avatar {
+    width: 200px;
+    border-radius: 0px;
+    border:3px solid #bfbfbf!important;
+    margin-bottom: 0;
+  }
+
+  .introTop {
+    margin-top: 8px;
+    text-align: left;
+    color: #5a5a58;
+    font-size: 1em;
+  }
+
+  .biolinks {
+    margin-top:4px;
+    position:absolute;
+    bottom:0px;
+    display: flex;
+    height:2em;
+  }
+  
+  .left {
+    float: left;
+    width: 200px;
+  }
+
+  .right {
+    height:206px;
+    margin-left: 232px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+
+  .header {
+    text-align: left;
+    font-size: 2em;
+    color: #5a5a58;
+    font-weight: 600;
+  }
+
+  .introTop {
+    margin-top: 12px;
+    text-align: left;
+    color: #5a5a58;
+    font-size: 1.2em;
+  }
   .waveInfo {
     font-weight:300;
     font-size:0.8em;

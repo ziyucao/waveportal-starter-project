@@ -8,8 +8,10 @@ import "./toastOverride.css"
 import abi from "./utils/WavePortal.json";
 
 import metaMaskIcon from "./img/metaMask.png";
-import twitterIcon from "./img/twitter64.png";
-import openSeaIcon from "./img/openSea64.png";
+import twitterIcon from "./img/twitter.svg";
+import openSeaIcon from "./img/openSea.svg";
+import cyberConnectIcon from "./img/cyberConnect.svg";
+import mirrorIcon from "./img/mirror.svg";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -273,11 +275,17 @@ const App = () => {
               <div className="biolinks">
                 <button className="ens" onClick={() => {navigator.clipboard.writeText("80kpc.eth"); toast.success("Copied")}}>80kpc.eth</button>
   
-                <a className="bioButton" target="_blank" href="https://twitter.com/caoziyu">
-                  <img className="bioImage" alt="my twitter" src={twitterIcon}/>
+                <a className="bioButton withBackground" target="_blank" href="https://twitter.com/caoziyu">
+                  <img className="bioImage bioImageTwitter" alt="my twitter" src={twitterIcon}/>
                 </a>
-                <a className="bioButton" target="_blank" href="https://opensea.io/80KPC">
+                <a className="bioButton withBackground" target="_blank" href="https://app.cyberconnect.me/address/80kpc.eth">
+                  <img className="bioImageCyberConnect" alt="my cyberconnect" src={cyberConnectIcon}/>
+                </a>
+                <a className="bioButton withBackground" target="_blank" href="https://opensea.io/80KPC">
                   <img className="bioImage" alt="my opensea" src={openSeaIcon}/>
+                </a>
+                <a className="bioButton withBackground" target="_blank" href="https://mirror.xyz/80kpc.eth">
+                  <img className="bioImageMirror" alt="my mirror" src={mirrorIcon}/>
                 </a>
               </div>
             </div>
